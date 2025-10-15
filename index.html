@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lesson 4</title>
+    <title>Symbolic Differentiation</title>
     <meta charset="UTF-8"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
     <script src="src/index.js" type="module"></script>
 </head>
 
 <body>
-<h1>Implement the symbolic diff here</h1>
-<div id="container">
-
-</div>
-<div>
-    <button id="demoButton">
-        Add something
-    </button>
-</div>
+    <div class="container">
+        <div class="header">
+            <h1>Symbolic Differentiation</h1>
+        </div>
+        
+        <div class="content">
+            <div class="input-group">
+                <label for="diff">Function to differentiate:</label>
+                <input type="text" id="diff" name="diff" placeholder="4*x^3-x^2+2*x-5" required>
+            </div>
+            
+            <div class="input-group">
+                <div class="differentiation-row">
+                    <label for="var">Differentiate with respect to:</label>
+                    <input type="text" id="var" name="var" class="var-input" placeholder="x" size="1" maxlength="1" required>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button id="demoButton">
+                    Calculate Derivative
+                </button>
+            </div>
+            
+            <div class="result-container">
+                <h3>Result:</h3>
+                <div id="container">
+                    <!-- Results will be appended here -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
